@@ -36,5 +36,9 @@ public class Client {
         this.lastName = lastName;
     }
 
+    public void setContactNo(LinkedListDefinitionClass<Long> contactNo) {
+        this.contactNo = contactNo;
+    }
+
 
 }
