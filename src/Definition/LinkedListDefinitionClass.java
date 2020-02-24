@@ -102,6 +102,14 @@ public class LinkedListDefinitionClass<E> implements LinkedListADTInterface<E> {
         return response;
     }
 
+    public void swap(int firstNode, int secondNode, int previous) {
+        Node<E> first = getNode(firstNode);
+        Node<E> second = getNode(secondNode);
+        Node<E> change = second;
+        second = first;
+        first = change;
+    }
+
     @Override
     public void print() {
 
@@ -110,6 +118,7 @@ public class LinkedListDefinitionClass<E> implements LinkedListADTInterface<E> {
     private static class Node<E> {
         private E data;
         private Node<E> next;
+
         private Node(E data) {
             this.data = data;
         }
