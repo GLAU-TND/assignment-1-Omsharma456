@@ -6,5 +6,6 @@ public class Client {
     private String firstName;
     private String lastName;
     private LinkedListDefinitionClass<Long> contactNo;
+    private String emailAddress;
 
 }
