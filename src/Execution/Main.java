@@ -3,9 +3,12 @@ package Execution;
 import Client.Client;
 import Definition.LinkedListDefinitionClass;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         LinkedListDefinitionClass<Client> listContact = new LinkedListDefinitionClass<Client>();
+        Scanner sc = new Scanner(System.in);
         boolean turnoff = false;
         int a = 0;
         System.out.println("Welcome to Abhi Contact list \uD83D\uDE01:");
@@ -16,5 +19,6 @@ public class Main {
                     "Press 4 to delete a contact\n" +
                     "Press 5 to exit program ");
         }
+        int ch = sc.nextInt();
     }
 }
