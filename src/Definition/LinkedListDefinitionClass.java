@@ -62,6 +62,17 @@ public class LinkedListDefinitionClass<E> implements LinkedListADTInterface<E> {
         return response;
     }
 
+    private E removeAfter(Node<E> node) {
+        E response = null;
+        Node<E> temp = node.getNext();
+        if (temp != null) {
+            node.next = temp.getNext();
+            size--;
+            response = temp.getData();
+        }
+        return response;
+    }
+
     @Override
     public int search(E item) {
         return 0;
@@ -71,6 +82,7 @@ public class LinkedListDefinitionClass<E> implements LinkedListADTInterface<E> {
     public void print() {
 
     }
+
     private static class Node<E> {
         private E data;
         private Node<E> next;
