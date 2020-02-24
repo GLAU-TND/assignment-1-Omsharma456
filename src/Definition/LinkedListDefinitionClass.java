@@ -73,6 +73,19 @@ public class LinkedListDefinitionClass<E> implements LinkedListADTInterface<E> {
         return response;
     }
 
+    public E remove(int index) {
+        E response = null;
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException(Integer.toString(index));
+        } else if (index == 0) {
+            response = removeFirst();
+        } else {
+            Node<E> previousNode = getNode(index - 1);
+            response = removeAfter(previousNode);
+        }
+        return response;
+    }
+
     @Override
     public int search(E item) {
         return 0;
