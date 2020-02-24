@@ -21,4 +21,6 @@ public class LinkedListDefinitionClass<E> implements LinkedListADTInterface<E> {
 
     }
     private static class Node<E> {
+        private E data;
+    }
     }
