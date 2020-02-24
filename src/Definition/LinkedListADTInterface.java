@@ -6,4 +6,5 @@ public interface LinkedListADTInterface<E> {
     E remove();
 
     int search(E item);
+    void print();
 }
