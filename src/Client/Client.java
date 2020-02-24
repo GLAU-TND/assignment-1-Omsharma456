@@ -32,5 +32,9 @@ public class Client {
         return lastName;
     }
 
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
 
 }
