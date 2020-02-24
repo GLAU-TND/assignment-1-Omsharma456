@@ -109,12 +109,16 @@ public class LinkedListDefinitionClass<E> implements LinkedListADTInterface<E> {
         second = first;
         first = change;
     }
-
     @Override
     public void print() {
+        System.out.print("[");
+        for (int i = 0; i < size; i++) {
+            E data = this.getNode(i).getData();
+            System.out.print(data + (i < size - 1 ? ", " : ""));
+        }
+        System.out.println("]");
 
     }
-
     private static class Node<E> {
         private E data;
         private Node<E> next;
