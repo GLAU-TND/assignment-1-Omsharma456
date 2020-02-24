@@ -6,4 +6,6 @@ public interface Menu<E> {
     boolean viewContact();
 
     boolean deleteContact();
+
+    boolean searchContact();
 }
