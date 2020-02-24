@@ -43,10 +43,6 @@ public class LinkedListDefinitionClass<E> implements LinkedListADTInterface<E> {
         add(size, item);
     }
 
-    @Override
-    public E remove() {
-        return null;
-    }
 
     private E removeFirst() {
         E response = null;
@@ -87,8 +83,23 @@ public class LinkedListDefinitionClass<E> implements LinkedListADTInterface<E> {
     }
 
     @Override
+    public E remove() {
+        return remove(size - 1);
+    }
+
+    @Override
     public int search(E item) {
-        return 0;
+        int response = -1;
+        for (int i = 0; i < size; i++) {
+
+            E data = this.getNode(i).getData();
+
+            if (item.equals(data)) {
+                response = i;
+                break;
+            }
+        }
+        return response;
     }
 
     @Override
