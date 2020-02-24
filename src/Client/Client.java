@@ -24,5 +24,9 @@ public class Client {
         return firstName;
     }
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
 
 }
