@@ -3,6 +3,11 @@ package Definition;
 public class LinkedListDefinitionClass<E> implements LinkedListADTInterface<E> {
     private Node<E> head = null;
     private int size = 0;
+    public int getSize() {
+        return size;
+    }
+
+
 
     @Override
     public void add(E item) {
