@@ -21,6 +21,11 @@ public class LinkedListDefinitionClass<E> implements LinkedListADTInterface<E> {
         size++;
     }
 
+    private void addAfter(Node<E> node, E item) {
+        node.next = new Node<>(item, node.next);
+        size++;
+    }
+
 
     @Override
     public void add(E item) {
