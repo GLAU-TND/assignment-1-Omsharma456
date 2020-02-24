@@ -37,14 +37,29 @@ public class LinkedListDefinitionClass<E> implements LinkedListADTInterface<E> {
         }
     }
 
+
     @Override
     public void add(E item) {
-
+        add(size, item);
     }
 
     @Override
     public E remove() {
         return null;
+    }
+
+    private E removeFirst() {
+        E response = null;
+        Node<E> temp = head;
+        if (head != null) {
+            head = head.getNext();
+        }
+        if (temp != null) {
+            size--;
+            response = temp.getData();
+        }
+
+        return response;
     }
 
     @Override
