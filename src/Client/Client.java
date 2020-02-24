@@ -8,4 +8,8 @@ public class Client {
     private LinkedListDefinitionClass<Long> contactNo;
     private String emailAddress;
 
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
 }
