@@ -12,4 +12,9 @@ public class Client {
         return emailAddress;
     }
 
+    public LinkedListDefinitionClass getContactNo() {
+        return contactNo;
+    }
+
+
 }
