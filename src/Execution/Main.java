@@ -20,5 +20,8 @@ public class Main {
                     "Press 5 to exit program ");
         }
         int ch = sc.nextInt();
+        switch (ch) {
+
+        }
     }
 }
