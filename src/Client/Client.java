@@ -16,5 +16,9 @@ public class Client {
         return contactNo;
     }
 
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+
 
 }
